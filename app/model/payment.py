@@ -36,12 +36,12 @@ class PaymentTable(Base):
     property_id = Column(
         Integer,
         ForeignKey("properties.id"),
-        nullable=False
+        nullable=True
     )
 
-    check_in = Column(Date, nullable=False)
-    check_out = Column(Date, nullable=False)
-    guests = Column(Integer, nullable=False)
+    check_in = Column(Date, nullable=True)
+    check_out = Column(Date, nullable=True)
+    guests = Column(Integer, nullable=True)
 
     # Razorpay details
     razorpay_order_id = Column(

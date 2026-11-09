@@ -1,6 +1,6 @@
 from fastapi import (
     APIRouter, Depends, HTTPException,
-    UploadFile, File, Form
+    UploadFile, File, Form,status,UploadFile
 )
 from sqlalchemy.orm import Session
 from app.schemas.users import *
@@ -12,10 +12,13 @@ import shutil
 import uuid
 from app.services.registration_mail import send_welcome_email
 from fastapi import BackgroundTasks
-from app.utils.jwt import create_access_token
+from app.utils.jwt import create_access_token,create_refresh_token,verify_refresh_token
 from fastapi.security import HTTPBearer
-from app.utils.auth import get_admin_user
+from app.utils.auth import get_admin_user, get_current_user
 from app.schemas.users import AdminCreate
+
+
+
 
 
 router = APIRouter(
@@ -164,7 +167,7 @@ def create_user(
         if profile_image:
             profile_image.file.close()
 
-
+# user login
 @router.post("/login")
 def login_user(data:UserLogin,db:Session=Depends(get_db)):
     verify_email=db.query(UserTable).filter(UserTable.email==data.email).first()
@@ -172,9 +175,11 @@ def login_user(data:UserLogin,db:Session=Depends(get_db)):
     if verify_email is not None:
         if pwd_context.verify(data.password,verify_email.password):
             access_token = create_access_token(verify_email.id)
+            refresh_token = create_refresh_token(verify_email.id)
             return{
                 "message":"login successful",
                 "access_token":access_token,
+                "refresh_token": refresh_token,
                 'token_type':'bearer'
                 
             }
@@ -189,47 +194,100 @@ def login_user(data:UserLogin,db:Session=Depends(get_db)):
     )
     
 
+# admin login page
+@router.post("/login/admin")
+def login_admin(data:UserLogin,db:Session=Depends(get_db)):
+    
+    verify_email=db.query(UserTable).filter(UserTable.email==data.email).first()
+    
+    if verify_email is not None:
+        if pwd_context.verify(data.password,verify_email.password):
+            if verify_email.is_admin == True:
+                access_token = create_access_token(verify_email.id)
+                refresh_token = create_refresh_token(verify_email.id)
+                return{
+                        "message":"login successful",
+                        "access_token":access_token,
+                        "refresh_token": refresh_token,
+                        'token_type':'bearer'
+                                
+                    }
+            else:
+                raise HTTPException(
+                    status_code=403,
+                    detail="this is only for admins only"
+                )
+            
+        else:
+            raise HTTPException(
+                status_code=404,
+                detail="Wrong Password Please try again"
+            )
+    raise HTTPException(
+        status_code=404,
+        detail="User email is not found"
+    )
 
+# create a new admin only admin can create a admin
 
 @router.post("/admin/create/", status_code=201)
 def create_admin(
-    data: AdminCreate,
+    first_name: str = Form(...),
+    last_name: str = Form(...),
+    email: str = Form(...),
+    contact_No: str = Form(...),
+    password: str = Form(...),
+
+    profile_image: UploadFile = File(...),
+
     current_admin: UserTable = Depends(get_admin_user),
     db: Session = Depends(get_db)
 ):
-    # Duplicate email check
+
     existing_email = db.query(UserTable).filter(
-        UserTable.email == str(data.email)
+        UserTable.email == email
     ).first()
 
     if existing_email:
-        raise HTTPException(
-            status_code=409,
-            detail="Email already registered"
-        )
+        raise HTTPException(409, "Email already registered")
 
-    # Duplicate contact check
     existing_contact = db.query(UserTable).filter(
-        UserTable.contact_No == data.contact_No
+        UserTable.contact_No == contact_No
     ).first()
 
     if existing_contact:
-        raise HTTPException(
-            status_code=409,
-            detail="Contact number already registered"
-        )
+        raise HTTPException(409, "Contact number already registered")
 
-    new_admin = UserTable(
-        first_name=data.first_name,
-        last_name=data.last_name,
-        email=str(data.email),
-        contact_No=data.contact_No,
-        password=pwd_context.hash(data.password),
-        is_admin=True,
-        is_active=True
-    )
+    # Image validation
+    allowed_extensions = [".jpg", ".jpeg", ".png", ".webp"]
+
+    extension = Path(profile_image.filename).suffix.lower()
+
+    if extension not in allowed_extensions:
+        raise HTTPException(400, "Invalid image format")
+
+    # Save image
+    upload_dir = Path("media/admin_profiles")
+    upload_dir.mkdir(parents=True, exist_ok=True)
+
+    image_name = f"{uuid.uuid4()}{extension}"
+    image_path = upload_dir / image_name
 
     try:
+        with image_path.open("wb") as buffer:
+            shutil.copyfileobj(profile_image.file, buffer)
+
+        new_admin = UserTable(
+            first_name=first_name,
+            last_name=last_name,
+            email=email,
+            contact_No=contact_No,
+            password=pwd_context.hash(password),
+            profile_image=f"admin_profiles/{image_name}",
+            is_admin=True,
+            is_active=True
+        )
+
         db.add(new_admin)
         db.commit()
         db.refresh(new_admin)
@@ -237,16 +295,24 @@ def create_admin(
         return {
             "message": "Admin created successfully",
             "admin_id": new_admin.id,
+            "profile_image": new_admin.profile_image,
             "created_by": current_admin.id
         }
 
     except Exception:
         db.rollback()
+
+        if image_path.exists():
+            image_path.unlink()
+
         raise HTTPException(
             status_code=500,
             detail="Could not create admin"
         )
 
+    finally:
+        profile_image.file.close()
+# all user list Admin view only
 @router.get("/admin/all-users/")
 def get_all_users(
     current_admin: UserTable = Depends(get_admin_user),
@@ -264,7 +330,8 @@ def get_all_users(
                 "email": user.email,
                 "contact_No": user.contact_No,
                 "is_admin": user.is_admin,
-                "is_active": user.is_active
+                "is_active": user.is_active,
+                "profile_image":user.profile_image
             }
             for user in users
         ]
@@ -272,3 +339,45 @@ def get_all_users(
 
 
 
+
+
+@router.post("/refresh-token/")
+def refresh_access_token(data: RefreshTokenRequest):
+
+    user_id = verify_refresh_token(data.refresh_token)
+
+    if not user_id:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid or expired refresh token"
+        )
+
+    new_access_token = create_access_token(int(user_id))
+
+    return {
+        "access_token": new_access_token,
+        "token_type": "bearer"
+    }
+    
+    
+    
+    
+# Get logged-in user profile
+@router.get("/profile/")
+def get_user_profile(
+    current_user: UserTable = Depends(get_current_user)
+):
+
+    return {
+        "message": "User profile fetched successfully",
+        "data": {
+            "id": current_user.id,
+            "first_name": current_user.first_name,
+            "last_name": current_user.last_name,
+            "email": current_user.email,
+            "contact_No": current_user.contact_No,
+            "profile_image": current_user.profile_image,
+            "is_admin": current_user.is_admin,
+            "is_active": current_user.is_active
+        }
+    }

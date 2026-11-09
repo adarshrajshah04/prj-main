@@ -1,10 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from datetime import date
 
 from app.database import get_db
 from app.model.booking import BookingTable
-from app.model.properties import PropertyTable
 from app.model.user import UserTable
 
 from app.schemas.booking import BookingCreate, BookingResponse
@@ -19,7 +17,7 @@ router = APIRouter(
 
 
 # READ: Logged-in user ki apni bookings
-@router.get("/my-bookings", response_model=list[BookingResponse])
+@router.get("/", response_model=list[BookingResponse])
 def get_my_bookings(
     db: Session = Depends(get_db),
     current_user: UserTable = Depends(get_current_user)
@@ -31,13 +29,24 @@ def get_my_bookings(
     return bookings
 
 
-# READ: Admin sabhi bookings dekh sakta hai
+# All booking for only admin
 @router.get("/all", response_model=list[BookingResponse])
 def get_all_bookings(
     db: Session = Depends(get_db),
     current_admin: UserTable = Depends(get_admin_user)
 ):
     return db.query(BookingTable).all()
+
+# # create booking
+# @router.post("/")
+# def create_booking(
+#     booking: BookingCreate,
+#     current_user: UserTable = Depends(get_current_user)
+# ):
+#     raise HTTPException(
+#         status_code=status.HTTP_409_CONFLICT,
+#         detail="Bookings require payment. Create a Razorpay order at /payment/create-order and verify it at /payment/verify."
+#     )
 
 
 # READ: Specific booking
@@ -128,48 +137,3 @@ def delete_booking(
         status_code=400,
         detail="Please use the booking cancellation process"
     )
-    
-    
-@router.post(
-    "/create",
-    response_model=BookingResponse,
-    status_code=status.HTTP_201_CREATED
-)
-def create_booking(
-    booking: BookingCreate,
-    db: Session = Depends(get_db),
-    current_user=Depends(get_current_user)
-):
-    # Check property exists
-    property_data = db.query(PropertyTable).filter(
-        PropertyTable.id == booking.property_id,
-        PropertyTable.is_active == True
-    ).first()
-
-    if not property_data:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Property not found"
-        )
-
-    # Check dates
-    if booking.check_in < date.today():
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Check-in date cannot be in the past"
-        )
-
-    if booking.check_out <= booking.check_in:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Check-out must be after check-in"
-        )
-
-    # Check guests
-    if booking.guests <= 0:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Guests must be at least 1"
-        )
-
-    # Further booking and payment logic will be added here.

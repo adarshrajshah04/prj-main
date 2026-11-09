@@ -1,17 +1,20 @@
 from fastapi import FastAPI,Depends
-from app.database import Base,engine
+from app.database import Base,engine,migrate_payment_schema
 from app.routes.users import security
 from fastapi.staticfiles import StaticFiles
 from fastapi.openapi.utils import get_openapi
 from app.utils.notification_cleanup import start_notification_cleanup
 from contextlib import asynccontextmanager
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.routes.users import router as users_router
 from app.routes.category import router as category_routes
 from app.routes.properties import router as properties_routes
 from app.routes.notification import router as notification_routes
-from app.routes import payment
-from fastapi.middleware.cors import CORSMiddleware
+from app.routes.payment import router as payment_routes
+from app.routes.booking import router as booking_routes 
+from app.routes.reviews import router as review_routes 
+from app.routes.wishlist import router as wishlist_routes 
 
 
 # deleting the notification in 1 day
@@ -34,6 +37,7 @@ app=FastAPI(
 )
 
 Base.metadata.create_all(bind=engine)
+migrate_payment_schema()
 
 # Cross-Origin Resource Sharing ( for frontend)
 app.add_middleware(
@@ -50,7 +54,10 @@ app.include_router(users_router)
 app.include_router(category_routes)
 app.include_router(properties_routes)
 app.include_router(notification_routes)
-app.include_router(payment.router)  
+app.include_router(payment_routes)
+app.include_router(booking_routes)
+app.include_router(review_routes)
+app.include_router(wishlist_routes)
 
 
 @app.get("/")
@@ -98,4 +105,3 @@ def custom_openapi():
 
     app.openapi_schema = openapi_schema
     return app.openapi_schema
-

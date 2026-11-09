@@ -1,14 +1,14 @@
 from pydantic import BaseModel, ConfigDict
 from decimal import Decimal
-from datetime import datetime
+from datetime import date, datetime
 from typing import Optional
 
 
 # Razorpay Order Create Request
 class PaymentCreate(BaseModel):
     property_id: int
-    check_in: datetime
-    check_out: datetime
+    check_in: date
+    check_out: date
     guests: int
 
 
@@ -17,7 +17,7 @@ class PaymentOrderResponse(BaseModel):
     payment_id: int
     razorpay_order_id: str
     razorpay_key_id: str
-    amount: Decimal
+    amount: int
     currency: str
     status: str
 

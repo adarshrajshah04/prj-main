@@ -1,0 +1,1442 @@
+[
+  {
+    "category_id": 1,
+    "name": "Seabreeze Luxury Villa",
+    "description": "A well-maintained luxury villas in Alibaug, Raigad, Maharashtra, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Alibaug, Raigad, Maharashtra",
+    "price_per_night": 5000,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 1,
+    "name": "Hillside Private Villa",
+    "description": "A well-maintained luxury villas in Lonavala, Pune, Maharashtra, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Lonavala, Pune, Maharashtra",
+    "price_per_night": 6700,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 2,
+    "name": "Pineview Mountain Cabin",
+    "description": "A well-maintained mountain cabins in Manali, Kullu, Himachal Pradesh, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Manali, Kullu, Himachal Pradesh",
+    "price_per_night": 5500,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 2,
+    "name": "Himalayan Hideaway Cabin",
+    "description": "A well-maintained mountain cabins in Shimla, Himachal Pradesh, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Shimla, Himachal Pradesh",
+    "price_per_night": 7200,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 3,
+    "name": "Coastal Breeze Beach House",
+    "description": "A well-maintained beach houses in Candolim, North Goa, Goa, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Candolim, North Goa, Goa",
+    "price_per_night": 6000,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 3,
+    "name": "Palm Shore Beach Home",
+    "description": "A well-maintained beach houses in Varkala, Thiruvananthapuram, Kerala, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Varkala, Thiruvananthapuram, Kerala",
+    "price_per_night": 7700,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 4,
+    "name": "Cityscape Premium Apartment",
+    "description": "A well-maintained apartments in Bandra West, Mumbai, Maharashtra, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Bandra West, Mumbai, Maharashtra",
+    "price_per_night": 4500,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 4,
+    "name": "Urban Comfort Apartment",
+    "description": "A well-maintained apartments in Koramangala, Bengaluru, Karnataka, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Koramangala, Bengaluru, Karnataka",
+    "price_per_night": 6200,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 5,
+    "name": "Misty Valley Cottage",
+    "description": "A well-maintained cottages in Mahabaleshwar, Satara, Maharashtra, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Mahabaleshwar, Satara, Maharashtra",
+    "price_per_night": 5000,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 5,
+    "name": "Garden View Cottage",
+    "description": "A well-maintained cottages in Coorg, Kodagu, Karnataka, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Coorg, Kodagu, Karnataka",
+    "price_per_night": 6700,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 6,
+    "name": "Serenity Palm Resort Stay",
+    "description": "A well-maintained resorts in Calangute, North Goa, Goa, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Calangute, North Goa, Goa",
+    "price_per_night": 5500,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 6,
+    "name": "Royal Lake Resort Suite",
+    "description": "A well-maintained resorts in Udaipur, Rajasthan, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Udaipur, Rajasthan",
+    "price_per_night": 7200,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 7,
+    "name": "Green Escape Nature Retreat",
+    "description": "A well-maintained nature retreats in Wayanad, Kerala, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Wayanad, Kerala",
+    "price_per_night": 6000,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 7,
+    "name": "Forest Edge Retreat",
+    "description": "A well-maintained nature retreats in Rishikesh, Uttarakhand, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Rishikesh, Uttarakhand",
+    "price_per_night": 7700,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 8,
+    "name": "Skyline Premium Penthouse",
+    "description": "A well-maintained penthouses in Worli, Mumbai, Maharashtra, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Worli, Mumbai, Maharashtra",
+    "price_per_night": 4500,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 8,
+    "name": "Panorama Luxury Penthouse",
+    "description": "A well-maintained penthouses in Golf Course Road, Gurugram, Haryana, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Golf Course Road, Gurugram, Haryana",
+    "price_per_night": 6200,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 9,
+    "name": "Countryside Family Farmhouse",
+    "description": "A well-maintained farmhouses in Karjat, Raigad, Maharashtra, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Karjat, Raigad, Maharashtra",
+    "price_per_night": 5000,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 9,
+    "name": "Mango Grove Farm Stay",
+    "description": "A well-maintained farmhouses in Chikkaballapur, Karnataka, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Chikkaballapur, Karnataka",
+    "price_per_night": 6700,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 10,
+    "name": "The Heritage Boutique Stay",
+    "description": "A well-maintained boutique stays in Fort Kochi, Ernakulam, Kerala, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Fort Kochi, Ernakulam, Kerala",
+    "price_per_night": 5500,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 10,
+    "name": "The Courtyard Boutique Home",
+    "description": "A well-maintained boutique stays in Jaipur, Rajasthan, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Jaipur, Rajasthan",
+    "price_per_night": 7200,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 11,
+    "name": "Canopy View Treehouse",
+    "description": "A well-maintained treehouses in Munnar, Idukki, Kerala, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Munnar, Idukki, Kerala",
+    "price_per_night": 6000,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 11,
+    "name": "Whispering Woods Treehouse",
+    "description": "A well-maintained treehouses in Sakleshpur, Hassan, Karnataka, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Sakleshpur, Hassan, Karnataka",
+    "price_per_night": 7700,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 12,
+    "name": "Starlit Luxury Glamping Tent",
+    "description": "A well-maintained glamping in Pawna Lake, Pune, Maharashtra, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Pawna Lake, Pune, Maharashtra",
+    "price_per_night": 4500,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 12,
+    "name": "Desert Sky Glamping Stay",
+    "description": "A well-maintained glamping in Jaisalmer, Rajasthan, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Jaisalmer, Rajasthan",
+    "price_per_night": 6200,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 13,
+    "name": "Royal Haveli Heritage Home",
+    "description": "A well-maintained heritage homes in Old City, Jaipur, Rajasthan, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Old City, Jaipur, Rajasthan",
+    "price_per_night": 5000,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 13,
+    "name": "Old Quarter Heritage Residence",
+    "description": "A well-maintained heritage homes in Fontainhas, Panaji, Goa, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Fontainhas, Panaji, Goa",
+    "price_per_night": 6700,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 14,
+    "name": "Compact City Studio",
+    "description": "A well-maintained studio apartments in Andheri West, Mumbai, Maharashtra, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Andheri West, Mumbai, Maharashtra",
+    "price_per_night": 5500,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 14,
+    "name": "Modern Work & Stay Studio",
+    "description": "A well-maintained studio apartments in Indiranagar, Bengaluru, Karnataka, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Indiranagar, Bengaluru, Karnataka",
+    "price_per_night": 7200,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 15,
+    "name": "Bluewater Lake House",
+    "description": "A well-maintained lake houses in Naukuchiatal, Nainital, Uttarakhand, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Naukuchiatal, Nainital, Uttarakhand",
+    "price_per_night": 6000,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 15,
+    "name": "Sunrise Lakefront Home",
+    "description": "A well-maintained lake houses in Udaipur, Rajasthan, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Udaipur, Rajasthan",
+    "price_per_night": 7700,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 16,
+    "name": "Alpine View Chalet",
+    "description": "A well-maintained chalets in Gulmarg, Baramulla, Jammu and Kashmir, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Gulmarg, Baramulla, Jammu and Kashmir",
+    "price_per_night": 4500,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 16,
+    "name": "Snowpeak Wooden Chalet",
+    "description": "A well-maintained chalets in Auli, Chamoli, Uttarakhand, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Auli, Chamoli, Uttarakhand",
+    "price_per_night": 6200,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 17,
+    "name": "Family Comfort Duplex",
+    "description": "A well-maintained duplex homes in Powai, Mumbai, Maharashtra, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Powai, Mumbai, Maharashtra",
+    "price_per_night": 5000,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 17,
+    "name": "Modern Garden Duplex",
+    "description": "A well-maintained duplex homes in Whitefield, Bengaluru, Karnataka, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Whitefield, Bengaluru, Karnataka",
+    "price_per_night": 6700,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 18,
+    "name": "Coral Bay Island Villa",
+    "description": "A well-maintained private island stays in Havelock Island, South Andaman, Andaman and Nicobar Islands, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Havelock Island, South Andaman, Andaman and Nicobar Islands",
+    "price_per_night": 5500,
+    "guest_capacity": 4,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  },
+  {
+    "category_id": 18,
+    "name": "Lagoon View Island Stay",
+    "description": "A well-maintained private island stays in Agatti Island, Lakshadweep, with comfortable interiors and essential facilities for a relaxing stay.",
+    "location": "Agatti Island, Lakshadweep",
+    "price_per_night": 7200,
+    "guest_capacity": 6,
+    "is_active": true,
+    "cover_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200",
+    "images": [
+      {
+        "room_type": "exterior",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200"
+      },
+      {
+        "room_type": "living_room",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+      },
+      {
+        "room_type": "bedroom",
+        "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200"
+      },
+      {
+        "room_type": "bathroom",
+        "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200"
+      },
+      {
+        "room_type": "kitchen",
+        "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200"
+      },
+      {
+        "room_type": "dining_area",
+        "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+      },
+      {
+        "room_type": "balcony_or_garden",
+        "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200"
+      }
+    ]
+  }
+]

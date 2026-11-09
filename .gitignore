@@ -13,3 +13,6 @@ htmlcov/
 # User uploaded media
 uploads/
 media/
+
+test_payment.html
+.git

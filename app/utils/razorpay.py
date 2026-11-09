@@ -1,3 +1,4 @@
+
 import os
 import razorpay
 
@@ -5,10 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
 RAZORPAY_KEY_ID = os.getenv("RAZORPAY_KEY_ID")
 RAZORPAY_KEY_SECRET = os.getenv("RAZORPAY_KEY_SECRET")
-
 
 if not RAZORPAY_KEY_ID or not RAZORPAY_KEY_SECRET:
     raise ValueError("Razorpay API credentials are missing from .env")
@@ -22,11 +21,11 @@ client = razorpay.Client(
 
 # Create Razorpay Order
 def create_razorpay_order(amount: int, receipt: str):
+
     order_data = {
         "amount": amount,
         "currency": "INR",
-        "receipt": receipt,
-        "payment_capture": 1
+        "receipt": receipt
     }
 
     order = client.order.create(data=order_data)
@@ -53,9 +52,15 @@ def verify_razorpay_payment(
     except razorpay.errors.SignatureVerificationError:
         return False
 
+
 # Fetch Razorpay Payment Details
 def get_razorpay_payment(razorpay_payment_id: str):
+    return client.payment.fetch(razorpay_payment_id)
 
-    payment = client.payment.fetch(razorpay_payment_id)
 
-    return payment
+# Capture Razorpay Payment
+def capture_razorpay_payment(
+    razorpay_payment_id: str,
+    amount: int
+):
+    return client.payment.capture(razorpay_payment_id, amount)

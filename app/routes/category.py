@@ -27,7 +27,20 @@ def allCategory(db:Session=Depends(get_db)):
         "message":"All categories",
         "data":all_Category
     }
-    
+
+@router.get("/{category_id}")
+def singleCategory(category_id:int,db:Session=Depends(get_db),):
+    single_Category=db.query(CategoryTable).filter(CategoryTable.id==category_id).first()
+        
+    if not single_Category:
+        raise HTTPException(
+            status_code=404,
+            detail=f"{category_id} category id is not found"
+        )
+    return{
+        "message":f"{single_Category.name} ",
+        "data":single_Category
+    }
 
 # create category
 # @router.post("/",response_model=CategoryResponse)
@@ -104,9 +117,12 @@ def createCategory(
 # update category 
 @router.put("/{category_id}",response_model=CategoryResponse)
 def updateCategory(
-    category_id:int,
-    data:CategoryUpdate,
-    db:Session=Depends(get_db),
+    category_id: int,
+    name: str = Form(...),
+    description: str = Form(...),
+    is_active: bool = Form(...),
+    image: UploadFile = File(None),
+    db: Session = Depends(get_db),
     current_admin=Depends(get_admin_user)
 ):
     
@@ -118,10 +134,27 @@ def updateCategory(
             detail=f"{category_id} category id is not found"
         )
     
-    update_Category.name=data.name
-    update_Category.description=data.description
-    # update_Category.image=data.image
-    update_Category.is_active=data.is_active
+    update_Category.name=name
+    update_Category.description=description
+    update_Category.is_active=is_active
+     # Image is optional
+    if image and image.filename:
+
+        extension = Path(image.filename).suffix.lower()
+
+        if extension not in [".jpg", ".jpeg", ".png", ".webp"]:
+            raise HTTPException(
+                status_code=400,
+                detail="Invalid image format"
+            )
+
+        filename = f"{uuid.uuid4()}{extension}"
+        image_path = UPLOAD_DIR / filename
+
+        with image_path.open("wb") as buffer:
+            shutil.copyfileobj(image.file, buffer)
+
+        update_Category.image = f"uploads/categories/{filename}"
     
     db.commit()
     

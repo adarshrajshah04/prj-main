@@ -27,6 +27,7 @@ class PropertyUpdate(BaseModel):
 class PropertyResponse(BaseModel):
     id: int
     category_id: int
+    category_name: str
     name: str
     description: str | None
     location: str

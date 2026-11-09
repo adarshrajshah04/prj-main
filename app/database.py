@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, inspect
 from sqlalchemy.orm import declarative_base,sessionmaker
 import os
 from dotenv import load_dotenv
@@ -23,3 +23,26 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+def migrate_payment_schema():
+    if "payments" not in inspect(engine).get_table_names():
+        return
+
+    existing_columns = {
+        column["name"] for column in inspect(engine).get_columns("payments")
+    }
+    missing_columns = {
+        "property_id": "INTEGER REFERENCES properties(id)",
+        "check_in": "DATE",
+        "check_out": "DATE",
+        "guests": "INTEGER",
+    }
+
+    with engine.begin() as connection:
+        for column_name, column_definition in missing_columns.items():
+            if column_name not in existing_columns:
+                connection.exec_driver_sql(
+                    f"ALTER TABLE payments ADD COLUMN "
+                    f"{column_name} {column_definition}"
+                )

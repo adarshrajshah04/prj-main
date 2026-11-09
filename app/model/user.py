@@ -22,3 +22,14 @@ class UserTable(Base):
     payments = relationship(
     "PaymentTable",
     back_populates="user")
+    
+    reviews = relationship(
+    "ReviewTable",
+    back_populates="user",
+    cascade="all, delete-orphan"
+    )
+    wishlists = relationship(
+    "WishlistTable",
+    back_populates="user",
+    cascade="all, delete-orphan"
+    )

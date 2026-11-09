@@ -32,3 +32,7 @@ class AdminCreate(BaseModel):
     email: EmailStr
     contact_No: str = Field(min_length=10, max_length=15)
     password: str = Field(min_length=8, max_length=72)
+    
+    
+class RefreshTokenRequest(BaseModel):
+    refresh_token: str
